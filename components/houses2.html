@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wochenendtrips</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      font-family:Arial, Helvetica, sans-serif;
+      background: white;
+      margin: 0;
+      padding: 20px;
+      color: #0c1c3a;
+    }
+
+    h1 {
+      width: 80%;
+      margin: auto;
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+
+    .date-range {
+      width: 80%;
+      margin: auto;
+      margin-bottom: 30px;
+      font-size: 1rem;
+    }
+
+    .date-range strong {
+      font-weight: bold;
+    }
+
+    .cards {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+    }
+
+    .card {
+      min-width: 250px;
+      max-width: 260px;
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+
+    .image-box {
+      position: relative;
+      height: 160px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: default;
+    }
+
+    .arrow.left {
+      left: 10px;
+    }
+
+    .arrow.right {
+      right: 10px;
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+      margin: 10px;
+    }
+
+    .rating span {
+      background-color: #0c8b5d;
+      color: white;
+      padding: 2px 8px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      margin-right: 6px;
+    }
+
+    .rating div {
+        font-size: 14px;
+    }
+    .reviews {
+      font-size: 14px;
+      color: #555;
+      background-color: white;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 0 10px;
+      margin-bottom: 4px;
+    }
+
+    .location {
+      padding: 0 10px;
+      color: #555;
+      font-size: 0.85rem;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      padding: 0 10px 10px;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .price-details {
+      padding: 0 10px 10px;
+      font-size: 0.85rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Stöbere in Wochenendtrips</h1>
+  <div class="date-range">Angebote für den Zeitraum: <strong>25. Juli–27. Juli</strong></div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="image-box" style="background-image: url('../images/house.jpg');">
+        <div class="arrow left"><i class="fas fa-chevron-left"></i></div>
+        <div class="arrow right"><i class="fas fa-chevron-right"></i></div>
+      </div>
+      <div class="rating">
+        <span>9,6</span>
+        <div>Außergewöhnlich <span class="reviews">(121 Bewertungen)</span></div>
+      </div>
+      <div class="title">Gemütliches Ferienhaus am Soorbeckenhof...</div>
+      <div class="location">Vierhöfen, NDS</div>
+      <div class="price">310 €</div>
+      <div class="price-details">155 € pro Nacht<br>inkl. Steuern & Gebühren</div>
+    </div>
+    <div class="card">
+      <div class="image-box" style="background-image: url('../images/house.jpg');">
+        <div class="arrow left"><i class="fas fa-chevron-left"></i></div>
+       <div class="arrow right"><i class="fas fa-chevron-right"></i></div>
+      </div>
+      <div class="rating">
+        <span>9,6</span>
+        <div>Außergewöhnlich <span class="reviews">(121 Bewertungen)</span></div>
+      </div>
+      <div class="title">Gemütliches Ferienhaus am Soorbeckenhof...</div>
+      <div class="location">Vierhöfen, NDS</div>
+      <div class="price">310 €</div>
+      <div class="price-details">155 € pro Nacht<br>inkl. Steuern & Gebühren</div>
+    </div>
+    <div class="card">
+      <div class="image-box" style="background-image: url('../images/house.jpg');">
+         <div class="arrow left"><i class="fas fa-chevron-left"></i></div>
+         <div class="arrow right"><i class="fas fa-chevron-right"></i></div>
+      </div>
+      <div class="rating">
+        <span>9,6</span>
+        <div>Außergewöhnlich <span class="reviews">(121 Bewertungen)</span></div>
+      </div>
+      <div class="title">Gemütliches Ferienhaus am Soorbeckenhof...</div>
+      <div class="location">Vierhöfen, NDS</div>
+      <div class="price">310 €</div>
+      <div class="price-details">155 € pro Nacht<br>inkl. Steuern & Gebühren</div>
+    </div>
+    <div class="card">
+      <div class="image-box" style="background-image: url('../images/house.jpg');">
+        <div class="arrow left"><i class="fas fa-chevron-left"></i></div>
+        <div class="arrow right"><i class="fas fa-chevron-right"></i></div>
+      </div>
+      <div class="rating">
+        <span>9,6</span>
+        <div>Außergewöhnlich <span class="reviews">(121 Bewertungen)</span></div>
+      </div>
+      <div class="title">Gemütliches Ferienhaus am Soorbeckenhof...</div>
+      <div class="location">Vierhöfen, NDS</div>
+      <div class="price">310 €</div>
+      <div class="price-details">155 € pro Nacht<br>inkl. Steuern & Gebühren</div>
+    </div>
+    
+  </div>
+
+</body>
+</html>

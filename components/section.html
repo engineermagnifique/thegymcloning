@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .section_container{
+            width: 100%;
+            height: 85%;
+            background-image: url('./images/parenting.jpg');
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .logo_container{
+            object-fit: contain;
+            width: 100%;
+        }
+        .center_section{
+            display: flex;
+            flex-direction: column;
+            width:70%;
+            align-items: start;
+        }
+        .section1{
+            font-size: 33px;
+            color:white;
+            border-width: 3;
+            border-color: black;
+        }
+        .section2{
+            background-color: white;
+            display: flex;
+            width: 92%;
+            justify-content:space-between;
+            align-items: center;
+            padding:20px;
+            border-radius: 20px;
+        }
+        .input_contaier{
+            padding:10px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            border:1px solid black;
+            align-items: center;
+            border-width: 2px;
+            border-radius: 5px;
+        }
+        input{
+            border:none;
+            width: 100%;
+            font-size: 18px;
+        }
+        .submit{
+            background-color: blue;
+            border-radius: 20px;
+            color: white;
+            border:2px solid blue;
+            padding:7px;
+            margin-right: 3px;
+        }
+        .last{
+            display: flex;
+            flex: row;
+            align-items: center;
+            justify-content: center;
+            gap: 2;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="section_container">
+            <div class="center_section">
+                <div class="section_content section1">
+                    Die ganze Unterkunft nur für dich
+                </div>
+                <div class="section_content section2">
+                    <div class="card_section">
+                        <div class="input_contaier">
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                            <input type="text" class="input_field" placeholder="We soll's hingene?"/>
+                        </div>
+                    </div>
+                    <div class="card_section">
+                          <div class="input_contaier">
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                            <input type="text" class="input_field" placeholder="We soll's hingene?"/>
+                        </div>
+                    </div>
+                    <div class="card_section last">
+                        <div class="input_contaier">
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                            <input type="text" class="input_field" placeholder="We soll's hingene?"/>
+                        </div>
+                        <div>
+                        <button type="submit" class="submit">Suchen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

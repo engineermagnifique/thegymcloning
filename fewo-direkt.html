@@ -1,0 +1,327 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fewo-direkt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container_header{
+            background-color:white;
+            display:flex;
+            flex-direction: row;
+            padding:20px;
+            align-items:center;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: space-between;
+        }
+        .top {
+            display: flex;
+            flex-direction: row;
+
+        }
+        .logo_container
+        {
+            width: 199;
+        }
+        .top a {
+            text-decoration: none;
+            color: black;
+            padding:15px;
+            font-weight:500;
+        }
+        .top a:hover{
+            color:blue;
+        }
+        i{
+            color:blue;
+        }
+        .first_child{
+            border:1px solid blue;
+            border-radius: 30px;
+            padding-top: 4px;
+            padding: 3px;
+        }
+        .child{
+            padding:3px;
+            padding-top: 4px;
+        }
+        .section_container{
+            width: 100%;
+            height: 85%;
+            background-image: url('./images/parenting.jpg');
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .logo_container{
+            object-fit: contain;
+            width: 100%;
+        }
+        .center_section{
+            display: flex;
+            flex-direction: column;
+            width:70%;
+            align-items: start;
+        }
+        .section1{
+            font-size: 33px;
+            color:white;
+            border-width: 3;
+            border-color: black;
+        }
+        .section2{
+            background-color: white;
+            display: flex;
+            width: 92%;
+            justify-content:space-between;
+            align-items: center;
+            padding:20px;
+            border-radius: 20px;
+        }
+        .input_contaier{
+            padding:10px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            border:1px solid black;
+            align-items: center;
+            border-width: 2px;
+            border-radius: 5px;
+        }
+        input{
+            border:none;
+            width: 100%;
+            font-size: 18px;
+        }
+        .submit{
+            background-color: blue;
+            border-radius: 20px;
+            color: white;
+            border:2px solid blue;
+            padding:7px;
+            margin-right: 3px;
+        }
+        .last{
+            display: flex;
+            flex: row;
+            align-items: center;
+            justify-content: center;
+            gap: 2;
+        }
+        .card_sections{
+            margin-left:auto;
+            margin-right: auto;
+            margin-top: 20px;
+            width: 70%;
+            background-color:#000033;
+            color:white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-radius: 10px;
+            justify-content: space-between;
+            padding:3px;
+        }
+        .card-icon{
+            margin-left: 3px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 70%;
+        }
+        .cardIcon{
+            background-color: white;
+            padding:10px;
+            border-radius: 100%;
+            margin-right: 10px;
+            align-items: center;
+        }
+        .black_section{
+            width: 75%;
+            height: 150px;
+            margin-left:auto;
+            margin-right:auto;
+            background-color:cadetblue;
+            margin-top: 70px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            padding:3px;
+            align-items: center;
+            justify-content: center;
+        }
+        .info_section{
+            width: 75%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left:auto;
+            margin-right: auto;
+        }
+        .title h3{
+            font-size: 16px;
+        }
+        .info_details{
+            width:70%;
+            margin-left: 20px;
+        }
+        .title p{
+            color:#0000;
+        }
+        .photo_section{
+            display:flex;
+            margin:auto;
+            border-radius: 20px;
+            align-items: center;
+            justify-content: space-between;
+            margin-top:10px;
+            width: 75%;
+            height: 500px;
+            background-image: url(./images/pexels-olly-3818963.jpg);
+            background-image: cover;
+        }
+        .card-photos{
+            width: 30%;
+            margin-left: 60px;
+            display: flex;
+            background-color: white;
+            flex-direction: column;
+            align-items:flex-start;
+            justify-content: flex-start;
+            height: 80%;
+            border-radius: 10px;
+        }
+        .card-photos h3{
+            font-size: 33px;
+        }
+        .section{
+            margin-bottom: 10px;
+            margin-left: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container_header">
+            <div class="container_header_left top">
+                <img src="./images/logo.svg" class="logo_container"/>
+            </div>
+            <div class="container_header_right top">
+                <div class="app_container first_child">
+                    <a href="/downloaad" class="link">App hurunterladen
+                         <i class="fa fa-download" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="app_container child">
+                    <a href="/downloaad" class="link">Raispanel</a>
+                </div>
+                <div class="app_container child">
+                    <a href="/downloaad" class="link">Unterkrufit registrein</a>
+                </div>
+                <div class="app_container child">
+                    <a href="/downloaad" class="link">Hielfe</a>
+                </div>
+                <div class="app_container child">
+                    <a href="/downloaad" class="link">Meine Raisen</a>
+                </div>
+                <div class="app_container child">
+                    <a href="/downloaad" class="link">Anmeleden</a>
+                </div>
+            </div>
+        </div>
+        <div class="section_container">
+             <iframe src="./components/section.html" width="100%" height="500px" style="border: none;"></iframe>
+        </div>
+        <div class="card_sections">
+            <div class="card-icon">
+                <div class="cardIcon">
+                     <i class="fa fa-download" class="cardIcon"></i>
+                </div>
+                <p>Melde dich an, um dem Gastgeber eine Nachricht zu schicken und mehr Details zu einer Unterkunft zu erhalten.</p>
+            </div>
+            <div class="card-button">
+                <button class="submit" type="submit">
+                    Anmeleden
+                </button>
+            </div>
+        </div>
+        <div class="black_section">
+        </div>
+         <iframe src="./components/houses.html" width="100%" height="500px" style="border: none;"></iframe>
+         <iframe src="./components/houses2.html" width="100%" height="500px" style="border: none;"></iframe>
+        <div class="info_section">
+            <div class="info_details">
+              <div class="icon">
+                 <i class="fa fa-download"></i>
+              </div>
+              <div class="title">
+                 <h3>Einfach sorglos</h3>
+              </div>
+              <div class="info">
+                 <p>Mit unserer Mit-Vertrauen-Buchen-Garantie bieten wir dir rund um die Uhr Unterstützung</p>
+              </div>
+            </div>
+            <div class="info_details">
+              <div class="icon">
+                 <i class="fa fa-download"></i>
+              </div>
+              <div class="title">
+                 <h3>Mehr gemeinsame Momente</h3>
+              </div>
+              <div class="info">
+                 <p>Von der Buchung bis hin zum Aufenthalt – der gesamte Vorgang ist einfach und unkompliziert</p>
+              </div>
+            </div>
+            <div class="info_details">
+              <div class="icon">
+                 <i class="fa fa-download"></i>
+              </div>
+              <div class="title">
+                 <h3>Die gleiche Privatsphäre wie zu Hause</h3>
+              </div>
+              <div class="info">
+                 <p>enieße Vorzüge wie eine voll ausgestattete Küche, Waschmaschine, Pool, Garten und mehr</p>
+              </div>
+            </div>
+            <div class="info_details">
+              <div class="icon">
+                 <i class="fa fa-download"></i>
+              </div>
+              <div class="title">
+                 <h3>Mehr Urlaub für weniger Geld</h3>
+              </div>
+              <div class="info">
+                 <p>Mehr Platz, mehr Privatsphäre, mehr Annehmlichkeiten – mehr Wert</p>
+              </div>
+            </div>
+        </div>
+        <div class="photo_section">
+            <div class="card-photos">
+                <div class="section">
+                    <h3>Vermieten Sie Ihre Unterkunft vertrauensvoll mit FeWo-direkt</h3>
+                </div>
+                 <div class="section">
+                     upport in Echtzeit, schnelles und unkompliziertes Registrieren und Gäste mit positivem Feedback – bei FeWo-direkt fühlt sich Gastgeben wie Urlaub an.
+                </div>
+                 <div class="section">
+                    <button class="submit" type="submit">
+                         Unterkunft inserieren
+                    </button>
+                  
+                </div>
+            </div>
+            <div class="photos">
+                 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
