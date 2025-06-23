@@ -102,7 +102,7 @@
         font-size: 14px;
     }
     .reviews {
-      font-size: 14px;
+      font-size: 12px;
       color: #555;
       background-color: white;
     }
@@ -132,6 +132,83 @@
       font-size: 0.85rem;
       color: #666;
     }
+    .trips-section,
+.between-trips {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.trips-section > h1 {
+  font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+  color: rgb(25, 30, 59);
+}
+
+.trips {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.trip {
+  min-width: 280px;
+  text-decoration: none;
+}
+
+.trip-images {
+  height: 180px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.navigation {
+  width: 33px;
+  height: 33px;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.two {
+  /* background-color: green; */
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+}
+
+/* .between-div {
+  background-color: gray;
+} */
+
+.between-image {
+  height: 80%;
+
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+.trip-description {
+  font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  line-height: normal;
+  color: rgb(25, 30, 59);
+}
   </style>
 </head>
 <body>
@@ -147,7 +224,7 @@
       </div>
       <div class="rating">
         <span>9,6</span>
-        <div>Außergewöhnlich <span class="reviews">(121 Bewertungen)</span></div>
+        <div>Außergewöhnlich <p class="reviews">(121 Bewertungen)</p></div>
       </div>
       <div class="title">Gemütliches Ferienhaus am Soorbeckenhof...</div>
       <div class="location">Vierhöfen, NDS</div>
@@ -161,7 +238,7 @@
       </div>
       <div class="rating">
         <span>9,6</span>
-        <div>Außergewöhnlich <span class="reviews">(121 Bewertungen)</span></div>
+        <div>Außergewöhnlich <p class="reviews">(121 Bewertungen)</p></div>
       </div>
       <div class="title">Gemütliches Ferienhaus am Soorbeckenhof...</div>
       <div class="location">Vierhöfen, NDS</div>
@@ -175,7 +252,7 @@
       </div>
       <div class="rating">
         <span>9,6</span>
-        <div>Außergewöhnlich <span class="reviews">(121 Bewertungen)</span></div>
+        <div>Außergewöhnlich <p class="reviews">(121 Bewertungen)</p></div>
       </div>
       <div class="title">Gemütliches Ferienhaus am Soorbeckenhof...</div>
       <div class="location">Vierhöfen, NDS</div>
@@ -189,7 +266,7 @@
       </div>
       <div class="rating">
         <span>9,6</span>
-        <div>Außergewöhnlich <span class="reviews">(121 Bewertungen)</span></div>
+        <div>Außergewöhnlich <p class="reviews">(121 Bewertungen)</p></div>
       </div>
       <div class="title">Gemütliches Ferienhaus am Soorbeckenhof...</div>
       <div class="location">Vierhöfen, NDS</div>
@@ -199,5 +276,1293 @@
     
   </div>
 
+  <section class="trips-section">
+      <h1 style="font-size: 28px; margin-bottom: 8px">Browse weekend trips</h1>
+      <p style="font-weight: normal; margin-top: 0">
+        Offers for the period: <b>July 25–27</b>
+      </p>
+
+      <div class="trips">
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >9.6</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(121 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Cozy holiday home at Soorbeckenhof between Lunerburd...
+            </p>
+            <p style="font-weight: normal; margin-top: 0">Vierhofen Saxony</p>
+            <p style="margin-bottom: 0; font-size: 20px">310 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 1px;
+                margin-top: 4px;
+                font-size: 12px;
+              "
+            >
+              155 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 1px; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >9.0</span
+              >
+              Wonderful
+              <span style="font-weight: lighter">(250 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Apartment for 6 people in Strausberg
+            </p>
+            <p style="font-weight: normal; margin-top: 0">Strausberg</p>
+            <p style="margin-bottom: 0; font-size: 20px">1,067 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              534 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 0; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >10</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(104 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Holiday with friends - THE all-around carefree package for your
+              holiday!
+            </p>
+            <p style="font-weight: normal; margin-top: 0">Masserberg, TH</p>
+            <p style="margin-bottom: 0; font-size: 20px">1,212 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              606 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 0; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >9.6</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(105 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Franconian idyll near Bamberg
+            </p>
+            <p style="font-weight: normal; margin-top: 0">Stegaurach, BY</p>
+            <p style="margin-bottom: 0; font-size: 20px">179 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              90 £ per night
+            </p>
+            <p
+              style="
+                font-weight: normal;
+                margin-top: 0;
+                font-size: 14px;
+                font-size: 12px;
+              "
+            >
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+              background-position: center;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >10</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(122 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Holidays in the old rectory
+            </p>
+            <p style="font-weight: normal; margin-top: 0">
+              Temnitzquell, Brandenburg region
+            </p>
+            <p style="margin-bottom: 0; font-size: 20px">245 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              122 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 0; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >9.8</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(114 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              A gem in an idyllic forest setting
+            </p>
+            <p style="font-weight: normal; margin-top: 0">
+              Greven, North Rhine-Westphalia
+            </p>
+            <p style="margin-bottom: 0; font-size: 20px">256 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              128 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 0; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >9.6</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(105 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Franconian idyll near Bamberg
+            </p>
+            <p style="font-weight: normal; margin-top: 0">Stegaurach, BY</p>
+            <p style="margin-bottom: 0; font-size: 20px">179 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              90 £ per night
+            </p>
+            <p
+              style="
+                font-weight: normal;
+                margin-top: 0;
+                font-size: 14px;
+                font-size: 12px;
+              "
+            >
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >9.8</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(100 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Holiday apartment with 3 individual bedrooms! Subway connection!
+              Fr...
+            </p>
+            <p style="font-weight: normal; margin-top: 0">Nuremberg, Bavaria</p>
+            <p style="margin-bottom: 0; font-size: 20px">406 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              203 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 0; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >9.8</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(133 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Holiday apartment GLUCKSSTEIN with sea view - 200 m to the beac...
+            </p>
+            <p style="font-weight: normal; margin-top: 0">
+              Borgerende-Rethwisch, Mecklenburg-West Pomerania
+            </p>
+            <p style="margin-bottom: 0; font-size: 20px">469 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              234 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 0; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >9.6</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(121 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Cozy holiday home at Soorbeckenhof between Lunerburd...
+            </p>
+            <p style="font-weight: normal; margin-top: 0">Vierhofen Saxony</p>
+            <p style="margin-bottom: 0; font-size: 20px">310 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 1px;
+                margin-top: 4px;
+                font-size: 12px;
+              "
+            >
+              155 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 1px; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >9.0</span
+              >
+              Wonderful
+              <span style="font-weight: lighter">(250 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Apartment for 6 people in Strausberg
+            </p>
+            <p style="font-weight: normal; margin-top: 0">Strausberg</p>
+            <p style="margin-bottom: 0; font-size: 20px">1,067 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              534 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 0; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >10</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(104 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Holiday with friends - THE all-around carefree package for your
+              holiday!
+            </p>
+            <p style="font-weight: normal; margin-top: 0">Masserberg, TH</p>
+            <p style="margin-bottom: 0; font-size: 20px">1,212 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              606 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 0; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >10</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(122 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Holidays in the old rectory
+            </p>
+            <p style="font-weight: normal; margin-top: 0">
+              Temnitzquell, Brandenburg region
+            </p>
+            <p style="margin-bottom: 0; font-size: 20px">245 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              122 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 0; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >9.8</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(114 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              A gem in an idyllic forest setting
+            </p>
+            <p style="font-weight: normal; margin-top: 0">
+              Greven, North Rhine-Westphalia
+            </p>
+            <p style="margin-bottom: 0; font-size: 20px">256 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              128 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 0; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >9.8</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(100 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Holiday apartment with 3 individual bedrooms! Subway connection!
+              Fr...
+            </p>
+            <p style="font-weight: normal; margin-top: 0">Nuremberg, Bavaria</p>
+            <p style="margin-bottom: 0; font-size: 20px">406 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              203 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 0; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >9.8</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(133 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Holiday apartment GLUCKSSTEIN with sea view - 200 m to the beac...
+            </p>
+            <p style="font-weight: normal; margin-top: 0">
+              Borgerende-Rethwisch, Mecklenburg-West Pomerania
+            </p>
+            <p style="margin-bottom: 0; font-size: 20px">469 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              234 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 0; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >9.6</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(121 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Cozy holiday home at Soorbeckenhof between Lunerburd...
+            </p>
+            <p style="font-weight: normal; margin-top: 0">Vierhofen Saxony</p>
+            <p style="margin-bottom: 0; font-size: 20px">310 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 1px;
+                margin-top: 4px;
+                font-size: 12px;
+              "
+            >
+              155 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 1px; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('images/trips18.jpeg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >9.0</span
+              >
+              Wonderful
+              <span style="font-weight: lighter">(250 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Apartment for 6 people in Strausberg
+            </p>
+            <p style="font-weight: normal; margin-top: 0">Strausberg</p>
+            <p style="margin-bottom: 0; font-size: 20px">1,067 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              534 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 0; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >10</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(104 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Holiday with friends - THE all-around carefree package for your
+              holiday!
+            </p>
+            <p style="font-weight: normal; margin-top: 0">Masserberg, TH</p>
+            <p style="margin-bottom: 0; font-size: 20px">1,212 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              606 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 0; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >10</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(122 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Holidays in the old rectory
+            </p>
+            <p style="font-weight: normal; margin-top: 0">
+              Temnitzquell, Brandenburg region
+            </p>
+            <p style="margin-bottom: 0; font-size: 20px">245 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              122 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 0; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >9.8</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(114 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              A gem in an idyllic forest setting
+            </p>
+            <p style="font-weight: normal; margin-top: 0">
+              Greven, North Rhine-Westphalia
+            </p>
+            <p style="margin-bottom: 0; font-size: 20px">256 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              128 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 0; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >9.6</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(105 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Franconian idyll near Bamberg
+            </p>
+            <p style="font-weight: normal; margin-top: 0">Stegaurach, BY</p>
+            <p style="margin-bottom: 0; font-size: 20px">179 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              90 £ per night
+            </p>
+            <p
+              style="
+                font-weight: normal;
+                margin-top: 0;
+                font-size: 14px;
+                font-size: 12px;
+              "
+            >
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >9.8</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(100 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Holiday apartment with 3 individual bedrooms! Subway connection!
+              Fr...
+            </p>
+            <p style="font-weight: normal; margin-top: 0">Nuremberg, Bavaria</p>
+            <p style="margin-bottom: 0; font-size: 20px">406 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              203 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 0; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+
+        <a class="trip" href="">
+          <div
+            class="trip-images"
+            style="
+              background: url('images/trips24.jpeg');
+              background-size: cover;
+            "
+          >
+            <div class="left navigation">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right navigation">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="trip-description">
+            <p style="display: flex; align-items: center; gap: 3px">
+              <span
+                style="
+                  background-color: rgb(0, 128, 85);
+                  padding: 4px 7px;
+                  border-radius: 5px;
+                  color: white;
+                "
+                >9.8</span
+              >
+              Unusual
+              <span style="font-weight: lighter">(133 reviews)</span>
+            </p>
+            <p style="margin-bottom: 3px; font-size: 16px">
+              Holiday apartment GLUCKSSTEIN with sea view - 200 m to the beac...
+            </p>
+            <p style="font-weight: normal; margin-top: 0">
+              Borgerende-Rethwisch, Mecklenburg-West Pomerania
+            </p>
+            <p style="margin-bottom: 0; font-size: 20px">469 £</p>
+            <p
+              style="
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                font-size: 12px;
+              "
+            >
+              234 £ per night
+            </p>
+            <p style="font-weight: normal; margin-top: 0; font-size: 12px">
+              incl. taxes & fees
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="between-trips">
+      <div class="two">
+        <div class="between-div">
+          <div
+            style="
+              background: url('../images/house.jpg');
+              background-size: cover;
+            "
+            class="between-image"
+          ></div>
+          <div>
+            <p style="font-weight: normal; margin-bottom: 0">
+              1 WEEK HOLIDAY, SAVE MORE
+            </p>
+            <p style="margin-top: 7px">
+              Summer last minute: Save on accomodation with weekly discounts
+            </p>
+          </div>
+        </div>
+        <div class="between-div">
+          <div
+            style="background: url('../images/house.jpg'); background-size: cover"
+            class="between-image"
+          ></div>
+          <div>
+            <p style="font-weight: normal; margin-bottom: 0">
+              1 WEEK HOLIDAY, SAVE MORE
+            </p>
+            <p style="margin-top: 7px">
+              Summer last minute: Save on accomodation with weekly discounts
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 </body>
 </html>
